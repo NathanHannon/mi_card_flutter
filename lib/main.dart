@@ -27,6 +27,16 @@ class MyApp extends StatelessWidget {
                   fontSize: 40,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
+                  fontFamily: 'Ubuntu',
+                ),
+              ),
+              Text(
+                'SOFTWARE DEVELOPER',
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.white,
+                  fontWeight: FontWeight.normal,
+                  fontFamily: 'IBM Plex Sans',
                 ),
               ),
             ],
