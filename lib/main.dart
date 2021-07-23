@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.cyan,
         body: SafeArea(
           child: Column(
             children: <Widget>[
@@ -34,9 +34,17 @@ class MyApp extends StatelessWidget {
                 'SOFTWARE DEVELOPER',
                 style: TextStyle(
                   fontSize: 20,
-                  color: Colors.white,
-                  fontWeight: FontWeight.normal,
+                  color: Colors.cyan.shade100,
+                  letterSpacing: 2.5,
+                  fontWeight: FontWeight.bold,
                   fontFamily: 'IBM Plex Sans',
+                ),
+              ),
+              Container(
+                child: Row(
+                  children: <Widget>[
+                    Icon(Icons.phone),
+                  ],
                 ),
               ),
             ],
