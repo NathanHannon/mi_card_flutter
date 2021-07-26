@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.cyan,
+        backgroundColor: Colors.blue,
         body: SafeArea(
           child: Column(
             children: <Widget>[
@@ -32,16 +32,63 @@ class MyApp extends StatelessWidget {
                 'SOFTWARE DEVELOPER',
                 style: TextStyle(
                   fontSize: 20,
-                  color: Colors.cyan.shade100,
+                  color: Colors.blue.shade100,
                   letterSpacing: 2.5,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'IBM Plex Sans',
                 ),
               ),
               Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(
+                  vertical: 10,
+                  horizontal: 25,
+                ),
+                padding: EdgeInsets.all(10),
                 child: Row(
                   children: <Widget>[
-                    Icon(Icons.phone),
+                    Icon(
+                      Icons.phone,
+                      color: Colors.blue,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      '+1 519-878-6227',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontFamily: 'IBM Plex Sans',
+                        fontSize: 20,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(
+                  vertical: 10,
+                  horizontal: 25,
+                ),
+                padding: EdgeInsets.all(10),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.email,
+                      color: Colors.blue,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      'nathan@hannon.me',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontFamily: 'IBM Plex Sans',
+                        fontSize: 20,
+                      ),
+                    ),
                   ],
                 ),
               ),
