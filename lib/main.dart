@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.blue,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
@@ -38,58 +39,53 @@ class MyApp extends StatelessWidget {
                   fontFamily: 'IBM Plex Sans',
                 ),
               ),
-              Container(
+              SizedBox(
+                height: 20,
+                child: Divider(
+                  color: Colors.blue.shade100,
+                ),
+                width: 200,
+              ),
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(
                   vertical: 10,
                   horizontal: 25,
                 ),
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                      color: Colors.blue,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.blue,
+                  ),
+                  title: Text(
+                    '+1 519-878-6227',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.blue.shade900,
+                      fontFamily: 'IBM Plex Sans',
                     ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      '+1 519-878-6227',
-                      style: TextStyle(
-                        color: Colors.blue,
-                        fontFamily: 'IBM Plex Sans',
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(
                   vertical: 10,
                   horizontal: 25,
                 ),
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
-                      color: Colors.blue,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.blue,
+                  ),
+                  title: Text(
+                    'nathan@hannon.me',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.blue.shade900,
+                      fontFamily: 'IBM Plex Sans',
                     ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      'nathan@hannon.me',
-                      style: TextStyle(
-                        color: Colors.blue,
-                        fontFamily: 'IBM Plex Sans',
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ],
